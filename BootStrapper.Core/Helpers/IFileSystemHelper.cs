@@ -5,9 +5,7 @@ using System.Threading.Tasks;
 
 namespace BootStrapper.Helpers;
 
-public interface IOpenExplorer
+public interface IFileSystemHelper
 {
-    Task<string?> OpenFolderDialogAsync();
-
-    void OpenBootStrapperFolder(string folderPath);
+    public abstract static void CopyDirectoryRecursively(string sourcePath, string destinationPath);
 }
